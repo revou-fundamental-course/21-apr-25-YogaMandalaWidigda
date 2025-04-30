@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konversi Suhu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+
+<body>
+  <div class="container">
+    <header class="top-content">
+        <h1 id="title">Celsius (°C) to Fahrenheit (°F) Conversion</h1>
+        <p>Enter a temperature in degrees Celsius (°C) in the box below, then click the Convert button to get the result in Fahrenheit (°F).</p>
+      </header>
+    <main class="main-content">
+        <label for="celsius" id="label-celsius">Celsius (°C):</label>
+        <textarea id="celsius" rows="2" placeholder="Input Temperature in Celcius"></textarea>
+
+        <div id="button-group">
+        <button class="convert" onclick="convert()">Convert</button>
+        <button class="reset" onclick="resetFields()">Reset</button>
+        <button class="reverse" onclick="reverse()">Reverse</button>
+        </div>
+
+        <label for="fahrenheit" id="label-fahrenheit">Fahrenheit (°F):</label>
+        <textarea id="fahrenheit" rows="2" readonly placeholder="Conversion Result..."></textarea>
+
+        <label for="rumus">Calculation Formula:</label>
+        <textarea id="rumus" rows="2" readonly></textarea>
+
+        <a onclick="reverse()">Switch Fahrenheit to Celsius</a>
+
+        <section class="bottom-content">
+        <h2>How to Convert</h2>
+        <p>S in Fahrenheit (°F) =S in Celsius (°C) × 9/5 + 32</strong></p>
+        <p><code>S(°F) = (S(°C) × 9/5) + 32</code></p>
+        <p>or</p>
+        <p><code>S(°F) = (S(°C) × 1.8) + 32</code></p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+  </div>
+
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>
