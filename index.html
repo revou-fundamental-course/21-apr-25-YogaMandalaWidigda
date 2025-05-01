@@ -11,39 +11,43 @@
 
 <body>
   <div class="container">
+    <!-- Title dan Deskripsi di Top Content -->
     <header class="top-content">
         <h1 id="title">Celsius (°C) to Fahrenheit (°F) Conversion</h1>
         <p>Enter a temperature in degrees Celsius (°C) in the box below, then click the Convert button to get the result in Fahrenheit (°F).</p>
       </header>
     <main class="main-content">
+      <!-- Input Celcius Field -->
         <label for="celsius" id="label-celsius">Celsius (°C):</label>
         <textarea id="celsius" rows="2" placeholder="Input Temperature in Celcius"></textarea>
-
+      <!-- Button Conv,Reset,Reverse -->
         <div id="button-group">
         <button class="convert" onclick="convert()">Convert</button>
         <button class="reset" onclick="resetFields()">Reset</button>
         <button class="reverse" onclick="reverse()">Reverse</button>
         </div>
-
+      <!-- Input Fahrenheit Field -->
         <label for="fahrenheit" id="label-fahrenheit">Fahrenheit (°F):</label>
-        <textarea id="fahrenheit" rows="2" readonly placeholder="Conversion Result..."></textarea>
-
+        <textarea id="fahrenheit" rows="2" readonly placeholder="Conversion Result"></textarea>
+        <!-- Display Rumus yang Dipakai-->
         <label for="rumus">Calculation Formula:</label>
         <textarea id="rumus" rows="2" readonly></textarea>
 
-        <a onclick="reverse()">Switch Fahrenheit to Celsius</a>
+        <!-- <a onclick="reverse()">Switch Fahrenheit to Celsius</a> -->
 
         <section class="bottom-content">
         <h2>How to Convert</h2>
-        <p>S in Fahrenheit (°F) =S in Celsius (°C) × 9/5 + 32</strong></p>
+        <p><label class="bold">S</label> in Fahrenheit (°F) = <label class="bold">S</label> in Celsius (°C) × 9/5 + 32</strong></p>
         <p><code>S(°F) = (S(°C) × 9/5) + 32</code></p>
         <p>or</p>
         <p><code>S(°F) = (S(°C) × 1.8) + 32</code></p>
         </section>
     </main>
     <footer>
+      <label>Copyright@YogaMandala</label>
     </footer>
   </div>
+  <div id="notification" class="notification hidden"></div>
 
   
 
